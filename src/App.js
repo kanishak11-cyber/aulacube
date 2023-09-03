@@ -31,7 +31,13 @@ function App() {
   );
 
   return (
-    <div className="flex bg-slate-100  bg-fixed min-h-screen flex-col md:flex-row">
+    <div>
+      <div className='shadow-md fixed w-full shadow-[#494949] bg-slate-200 text-center'>
+        <h1 className="md:text-4xl text-xl text-center text-violet-500 uppercase  p-4"> 
+        AulaCube Comments Assignment
+        </h1>
+      </div>
+      <div className="flex bg-slate-100 pt-14  bg-fixed min-h-screen flex-col md:flex-row">
       <div className="w-full md:w-1/3 p-4 ">
         <div className="rounded-lg p-4 ">
           <Filter postIdFilter={postIdFilter} setPostIdFilter={setPostIdFilter} />
@@ -48,6 +54,8 @@ function App() {
         )}
       </div>
     </div>
+    </div>
+    
   );
 }
 
